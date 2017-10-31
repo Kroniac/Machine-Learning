@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import cass from './App.css';
 import Person from './Person';
 
 class App extends Component {
@@ -65,11 +65,11 @@ class App extends Component {
     const classes = []
 
     if (this.state.persons.length < 3) {
-      classes.push('red');
+      classes.push(cass.red);
     }
 
     if (this.state.persons.length < 2) {
-      classes.push('bold');
+      classes.push(cass.bold);
     }
 
     const style = {
@@ -106,7 +106,7 @@ class App extends Component {
 
     return (
     
-        <div className='App'>
+        <div className={cass.App}>
           <br />
           <br />
           <button style={style} onClick={this.togglePersonHandler} >Show Details</button>
