@@ -73,7 +73,7 @@ class App extends Component {
     }
 
    
-
+    let btnClass = '';
     let persons = null;
     if (this.state.showPersons) {
       persons = (
@@ -91,6 +91,8 @@ class App extends Component {
         </div>
 
       )
+
+      btnClass = cass.Red;
       
      
       
@@ -101,7 +103,7 @@ class App extends Component {
         <div className={cass.App}>
           <br />
           <br />
-          <button onClick={this.togglePersonHandler} >Show Details</button>
+          <button className={btnClass} onClick={this.togglePersonHandler} >Show Details</button>
 
           <h1>Hellooooooooooooo </h1>
           <p className={classes.join(' ')}>Look, I'm changing!!</p>
