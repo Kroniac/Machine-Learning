@@ -1,1 +1,0 @@
-My first dynamic react app. Using props and using setstate for name age also for the contents i.e childrens and using components and change it on button click.
