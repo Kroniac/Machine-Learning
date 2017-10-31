@@ -72,15 +72,7 @@ class App extends Component {
       classes.push(cass.bold);
     }
 
-    const style = {
-      background: "blue",
-      color: "white",
-      font: "inherit",
-      border: '1px solid blue',
-      padding: '8px',
-      cursor: 'pointer',
-      
-    }
+   
 
     let persons = null;
     if (this.state.showPersons) {
@@ -99,7 +91,7 @@ class App extends Component {
         </div>
 
       )
-      style.background = "red";
+      
      
       
     }
@@ -109,7 +101,7 @@ class App extends Component {
         <div className={cass.App}>
           <br />
           <br />
-          <button style={style} onClick={this.togglePersonHandler} >Show Details</button>
+          <button onClick={this.togglePersonHandler} >Show Details</button>
 
           <h1>Hellooooooooooooo </h1>
           <p className={classes.join(' ')}>Look, I'm changing!!</p>
